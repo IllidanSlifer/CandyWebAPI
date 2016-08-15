@@ -28,6 +28,7 @@ namespace APICandyCrush.Models
         
         public DbSet<User> Users { get; set; }
         public DbSet<Partida> Games { get; set; }
+        public DbSet<UserPartida> UserPartidas { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
