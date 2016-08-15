@@ -64,3 +64,7 @@ C:\Users\Kevin\Documents\GitHub\CandyWebAPI\APICandyCrush\APICandyCrush\bin\Syst
 C:\Users\Kevin\Documents\GitHub\CandyWebAPI\APICandyCrush\APICandyCrush\obj\Debug\APICandyCrush.csprojResolveAssemblyReference.cache
 C:\Users\Kevin\Documents\GitHub\CandyWebAPI\APICandyCrush\APICandyCrush\obj\Debug\APICandyCrush.dll
 C:\Users\Kevin\Documents\GitHub\CandyWebAPI\APICandyCrush\APICandyCrush\obj\Debug\APICandyCrush.pdb
+C:\Users\Kevin\Documents\GitHub\CandyWebAPI\APICandyCrush\APICandyCrush\bin\System.Linq.Dynamic.dll
+C:\Users\Kevin\Documents\GitHub\CandyWebAPI\APICandyCrush\APICandyCrush\obj\Debug\APICandyCrush.Migrations.create_game_user_table.resources
+C:\Users\Kevin\Documents\GitHub\CandyWebAPI\APICandyCrush\APICandyCrush\obj\Debug\APICandyCrush.csproj.GenerateResource.Cache
+C:\Users\Kevin\Documents\GitHub\CandyWebAPI\APICandyCrush\APICandyCrush\obj\Debug\APICandyCrush.Migrations.create_user_table.resources
