@@ -79,6 +79,8 @@ namespace APICandyCrush.Controllers
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         public IHttpActionResult PostUserPartida(UserPartida userPartida)
         {
+            userPartida.Partida = db.Games.Find(userPartida.PartidaID);
+            userPartida.User = db.Users.Find(userPartida.UserID);
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
