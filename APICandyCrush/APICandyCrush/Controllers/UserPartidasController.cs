@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using APICandyCrush.Models;
+using System.Web.Http.Cors;
 
 namespace APICandyCrush.Controllers
 {
@@ -17,6 +18,7 @@ namespace APICandyCrush.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/UserPartidas
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public IQueryable<UserPartida> GetUserPartidas()
         {
             return db.UserPartidas;
@@ -24,6 +26,7 @@ namespace APICandyCrush.Controllers
 
         // GET: api/UserPartidas/5
         [ResponseType(typeof(UserPartida))]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public IHttpActionResult GetUserPartida(int id)
         {
             UserPartida userPartida = db.UserPartidas.Find(id);
@@ -37,6 +40,7 @@ namespace APICandyCrush.Controllers
 
         // PUT: api/UserPartidas/5
         [ResponseType(typeof(void))]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public IHttpActionResult PutUserPartida(int id, UserPartida userPartida)
         {
             if (!ModelState.IsValid)
@@ -72,6 +76,7 @@ namespace APICandyCrush.Controllers
 
         // POST: api/UserPartidas
         [ResponseType(typeof(UserPartida))]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public IHttpActionResult PostUserPartida(UserPartida userPartida)
         {
             if (!ModelState.IsValid)
@@ -86,6 +91,7 @@ namespace APICandyCrush.Controllers
         }
 
         // DELETE: api/UserPartidas/5
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [ResponseType(typeof(UserPartida))]
         public IHttpActionResult DeleteUserPartida(int id)
         {
@@ -101,6 +107,7 @@ namespace APICandyCrush.Controllers
             return Ok(userPartida);
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -110,6 +117,7 @@ namespace APICandyCrush.Controllers
             base.Dispose(disposing);
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         private bool UserPartidaExists(int id)
         {
             return db.UserPartidas.Count(e => e.ID == id) > 0;
